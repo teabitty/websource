@@ -1,0 +1,159 @@
+
+body{
+  height: 100%;
+  margin: 0;
+  padding: 3% 3% 0% 3%;
+  background-color: #5f2613;
+  font-family: pf-videotext, sans-serif;
+  overflow-x: hidden;
+
+}
+h1{
+  color: #020219;
+  text-align: center;
+  margin-top: 0%;
+  font-size: 100px;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+}
+
+p{
+  color: #020219;
+  text-align: center;
+  margin: 5%;
+  font-size: 24px;
+  text-align: center;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+
+}
+
+/* img{
+  max-width: 70%;
+  margin-left: 3%;
+} */
+
+/*--------------CONTENT-------------*/
+
+.container{
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  padding-bottom: 0;
+  overflow: hidden;
+
+}
+
+.container img {
+  transition: filter 0.3s;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.container img:hover{
+  filter:blur(5px);
+}
+
+
+
+.text-overlay{
+  position: absolute;
+  overflow: visible;
+  color: #f2f3ea;
+  text-align: center;
+  font-size: 12vw;
+  width: 10px;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+  top: 70px;
+  left: 70px;
+/  /* margin-left: 4%; */
+  /* transform: translate(0, -20%); */
+  /* padding: 20px; */
+
+}
+
+.button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: left;
+  height: 100vh;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 6%;
+  /* flex-direction: column; */ /*stacking the buttons*/
+  align-items: flex-end;
+  border: #e8e5dc;
+}
+.button a{
+  display: block;
+  margin: 14px;
+  padding: 10px 20px;
+  background-color:rgb(182, 232, 226);
+  color: #5f2613;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  
+}
+
+.button a:hover{
+  background-color: #020219;
+  color: #e8e5dc;
+}
+
+.text-animation{
+  animation: fadeUp 2s;
+
+}
+@keyframes fadeUp{
+  0%{
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#ease-in-out{
+  animation-timing-function: ease-in-out;
+}
+
+.overlay{
+  position: relative;
+  color: #f2f3ea;
+  /* text-align: center; */
+  width: 200px;
+  font-family: pf-videotext, sans-serif;
+  top: 420px;
+  left: 85px;
+  font-size: 12px;
+  opacity: 0;
+  animation: fadeUp2 4s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+
+/* .caption-animation{ /*didn't work 
+  animation: fadeUp2 4s;
+  animation-delay: 2s;
+} */
+
+@keyframes fadeUp2{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

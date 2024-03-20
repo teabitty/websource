@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+
+  background-color: #5f2613;
+}
+.outer-border{
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding: 4px 3px;
+} /* code got it from: https://earthmonth.redwoodempirewhiskey.com/ */
+
+
+h1{
+  color:white;
+  text-align: center;
+  font-size: 72px;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+
+}
+h2{
+  color:white;
+  text-align: left;
+  margin-left: 24px;
+  font-size: 34px;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+
+}
+
+.container{
+  text-align:justify;
+  display: flex;
+}
+.description{
+  flex:1;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.description p{
+  color:white;
+  font-family: pf-videotext, sans-serif;
+  font-style: normal;
+  width: 50vw;
+  text-align: left;
+  margin-left: 7vw;
+
+}
+/*-----------GIF---------------*/
+.image{ 
+  flex:1;
+}
+.image img{
+  max-width: 70%;
+  height: auto;
+}
+/*
+hr{
+  border: none;
+  height: 2px;
+  background-color: #f2f3ea;
+  margin: 0 auto 20px auto; /* Margin above and below the line, auto for centering *//*
+  width: 50%; 
+  text-align: center;
+  margin-bottom: 10%;
+} */
+
+.tabs {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #5f2613;
+  margin-bottom: 3%;
+}
+  
+.tabs a {
+  display: block;
+  margin: 14px;
+  padding: 10px 20px;
+  background-color:rgb(182, 232, 226);
+  color: #5f2613;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+  
+.tabs a:hover {
+  color: #5f2613;
+  background-color: #f2f3ea;
+  opacity: 0.5;
+}
+
+.resources p{
+  margin:5%;
+  color: #5f2613;
+  line-height: 170%;
+  background-color: #f2f3ea;
+  padding: 3%;
+}
+
+.resources h1{
+  text-align: center;
+}
+
+.resources a{
+  text-decoration: none;
+  font-style: oblique;
+  color: #f2f3ea;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  margin-bottom: 2%;
+}
+.resources a:hover{
+  text-decoration: underline;
+}
+
+.resources hr{ /*the lines seperating the links*/
+  margin-bottom: 2%; /*add space between the line and the link*/
+  margin-left: 25vw;
+  width: 50vw;
+  text-align: center;
+}
+
+.footer{
+  color: #5f2613;
+  background-color: #f2f3ea;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  }
+  
+  .footer p{
+    color: #5f2613;
+    display:block;
+    text-align: center;
+  }
